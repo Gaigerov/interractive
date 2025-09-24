@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивный аватар</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Виртуальный помощник</h1>
+
+        <div id="avatar-container" class="avatar-container"></div>
+
+        <div id="status" class="status">Загрузка...</div>
+
+        <div class="volume-control">
+            <label for="volume">Громкость:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="0.8">
+        </div>
+
+        <div id="questions-container" class="questions-container"></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
